@@ -2,11 +2,11 @@
 
   ![lingua](https://raw.githubusercontent.com/pemistahl/lingua-go/main/cmd/images/logo.png)
   
-  [![Build Status](https://github.com/pemistahl/lingua-go/workflows/build/badge.svg?branch=main)](https://github.com/pemistahl/lingua-go/actions?query=workflow%3A%22build%22+branch%3Amain)
+  [![Build Status](https://ggithub.com/jeffphp/lingua-go/workflows/build/badge.svg?branch=main)](https://ggithub.com/jeffphp/lingua-go/actions?query=workflow%3A%22build%22+branch%3Amain)
   [![codecov](https://codecov.io/gh/pemistahl/lingua-go/branch/main/graph/badge.svg)](https://codecov.io/gh/pemistahl/lingua-go)
   [![supported languages](https://img.shields.io/badge/supported%20languages-75-green.svg)](#3-which-languages-are-supported)
-  [![Go Reference](https://pkg.go.dev/badge/github.com/pemistahl/lingua-go.svg)](https://pkg.go.dev/github.com/pemistahl/lingua-go)
-  [![Go Report Card](https://goreportcard.com/badge/github.com/pemistahl/lingua-go)](https://goreportcard.com/report/github.com/pemistahl/lingua-go)
+  [![Go Reference](https://pkg.go.dev/badge/ggithub.com/jeffphp/lingua-go.svg)](https://pkg.go.dev/ggithub.com/jeffphp/lingua-go)
+  [![Go Report Card](https://goreportcard.com/badge/ggithub.com/jeffphp/lingua-go)](https://goreportcard.com/report/ggithub.com/jeffphp/lingua-go)
   [![license](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://www.apache.org/licenses/LICENSE-2.0)
 </div>
 
@@ -1793,7 +1793,7 @@ and all languages by doing:
 For *gocld3* to run successfully, you need to install the exact 
 [version 3.17.3](https://github.com/protocolbuffers/protobuf/releases/tag/v3.17.3) of Google's protocol buffers which is a bit
 unfortunate. For each detector and language, a test report file is then written into
-[`/accuracy-reports`](https://github.com/pemistahl/lingua-go/tree/main/cmd/accuracy-reports).
+[`/accuracy-reports`](https://ggithub.com/jeffphp/lingua-go/tree/main/cmd/accuracy-reports).
 As an example, here is the current output of the *Lingua* German report:
 
 ```
@@ -1816,14 +1816,14 @@ Erroneously classified as Dutch: 0.20%, Latin: 0.10%
 
 ## 7. How to add it to your project?
 
-    go get github.com/pemistahl/lingua-go
+    go get ggithub.com/jeffphp/lingua-go
 
 ## 8. How to build?
 
 *Lingua* requires at least Go version 1.18.
 
 ```
-git clone https://github.com/pemistahl/lingua-go.git
+git clone https://ggithub.com/jeffphp/lingua-go.git
 cd lingua-go
 go build
 ```
@@ -1841,7 +1841,7 @@ package main
 
 import (
     "fmt"
-    "github.com/pemistahl/lingua-go"
+    "ggithub.com/jeffphp/lingua-go"
 )
 
 func main() {
@@ -1878,7 +1878,7 @@ package main
 
 import (
     "fmt"
-    "github.com/pemistahl/lingua-go"
+    "ggithub.com/jeffphp/lingua-go"
 )
 
 func main() {
@@ -1908,7 +1908,7 @@ func main() {
 Be aware that the distance between the language probabilities is dependent on the length of the
 input text. The longer the input text, the larger the distance between the languages. So if you
 want to classify very short text phrases, do not set the minimum relative distance too high.
-Otherwise [`Unknown`](https://github.com/pemistahl/lingua-go/blob/main/language.go#L107) will be
+Otherwise [`Unknown`](https://ggithub.com/jeffphp/lingua-go/blob/main/language.go#L107) will be
 returned most of the time as in the example above. This is the return value for cases where
 language detection is not reliably possible. This value is not meant to be included in the set
 of input languages when building the language detector. If you include it, it will be
@@ -1925,7 +1925,7 @@ package main
 
 import (
     "fmt"
-    "github.com/pemistahl/lingua-go"
+    "ggithub.com/jeffphp/lingua-go"
 )
 
 func main() {
@@ -1955,7 +1955,7 @@ func main() {
 ```
 
 In the example above, a slice of 
-[`ConfidenceValue`](https://github.com/pemistahl/lingua-go/blob/main/confidence.go#L21) 
+[`ConfidenceValue`](https://ggithub.com/jeffphp/lingua-go/blob/main/confidence.go#L21) 
 is returned containing all possible languages sorted by their confidence value in descending 
 order. Each value is a probability between 0.0 and 1.0. The probabilities of all languages 
 will sum to 1.0. If the language is unambiguously identified by the rule engine, the value 1.0
@@ -2041,7 +2041,7 @@ package main
 
 import (
     "fmt"
-    "github.com/pemistahl/lingua-go"
+    "ggithub.com/jeffphp/lingua-go"
 )
 
 func main() {
@@ -2070,7 +2070,7 @@ func main() {
 }
 ```
 
-In the example above, a slice of [`DetectionResult`](https://github.com/pemistahl/lingua-go/blob/main/result.go#L22)
+In the example above, a slice of [`DetectionResult`](https://ggithub.com/jeffphp/lingua-go/blob/main/result.go#L22)
 is returned. Each entry in the slice describes a contiguous single-language text section,
 providing start and end indices of the respective substring.
 
@@ -2106,10 +2106,10 @@ lingua.NewLanguageDetectorBuilder().FromIsoCodes639_3(lingua.ENG, lingua.DEU)
 
 ## 10. What's next for version 1.4.0?
 
-Take a look at the [planned issues](https://github.com/pemistahl/lingua-go/milestone/5).
+Take a look at the [planned issues](https://ggithub.com/jeffphp/lingua-go/milestone/5).
 
 ## 11. Contributions
 
 Any contributions to *Lingua* are very much appreciated. Please read the instructions
-in [`CONTRIBUTING.md`](https://github.com/pemistahl/lingua-go/blob/main/CONTRIBUTING.md)
+in [`CONTRIBUTING.md`](https://ggithub.com/jeffphp/lingua-go/blob/main/CONTRIBUTING.md)
 for how to add new languages to the library.

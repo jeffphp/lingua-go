@@ -1,11 +1,11 @@
-module github.com/pemistahl/lingua-go/cmd
+module ggithub.com/jeffphp/lingua-go/cmd
 
 go 1.18
 
 require (
 	github.com/abadojack/whatlanggo v1.0.1
 	github.com/jmhodges/gocld3 v0.0.0-20211031064447-cc40e88f7505
-	github.com/pemistahl/lingua-go v1.2.1
+	ggithub.com/jeffphp/lingua-go v1.2.1
 )
 
 require (
@@ -13,4 +13,4 @@ require (
 	google.golang.org/protobuf v1.28.1 // indirect
 )
 
-replace github.com/pemistahl/lingua-go => ../
+replace ggithub.com/jeffphp/lingua-go => ../

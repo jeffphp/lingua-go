@@ -1,4 +1,4 @@
-module github.com/pemistahl/lingua-go
+module ggithub.com/jeffphp/lingua-go
 
 go 1.18
 

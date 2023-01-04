@@ -20,7 +20,6 @@ import (
 	"fmt"
 	"github.com/abadojack/whatlanggo"
 	"github.com/jmhodges/gocld3/cld3"
-	"github.com/pemistahl/lingua-go"
 	"math"
 	"math/big"
 	"os"

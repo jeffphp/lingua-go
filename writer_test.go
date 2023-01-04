@@ -19,7 +19,7 @@ package lingua
 import (
 	"archive/zip"
 	"fmt"
-	"github.com/pemistahl/lingua-go/serialization"
+	"ggithub.com/jeffphp/lingua-go/serialization"
 	"github.com/stretchr/testify/assert"
 	"google.golang.org/protobuf/proto"
 	"io"
