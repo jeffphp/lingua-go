@@ -21,7 +21,7 @@ import (
 	"bufio"
 	"errors"
 	"fmt"
-	"ggithub.com/jeffphp/lingua-go/serialization"
+	"github.com/jeffphp/lingua-go/serialization"
 	"google.golang.org/protobuf/proto"
 	"os"
 	"path/filepath"

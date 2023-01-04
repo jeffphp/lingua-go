@@ -21,7 +21,7 @@ import (
 	"bytes"
 	"embed"
 	"fmt"
-	"ggithub.com/jeffphp/lingua-go/serialization"
+	"github.com/jeffphp/lingua-go/serialization"
 	"golang.org/x/exp/maps"
 	"golang.org/x/exp/slices"
 	"google.golang.org/protobuf/proto"

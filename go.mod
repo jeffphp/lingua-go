@@ -1,4 +1,4 @@
-module ggithub.com/jeffphp/lingua-go
+module github.com/jeffphp/lingua-go
 
 go 1.18
 
